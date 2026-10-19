@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#087f5b">
+<title>Ajudância de Fortaleza — Cidade mais limpa</title>
+<style>
+:root{--green:#087f5b;--dark:#07513d;--mint:#e8f7ef;--blue:#eaf4ff;--ink:#18352c;--muted:#5b7168;--gold:#f4b942;--line:#d8e9df}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#f7fbf8;line-height:1.5}
+header{background:linear-gradient(120deg,#07513d,#0d9b6a);color:white;padding:18px max(18px,calc((100vw - 1100px)/2));}
+.top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.brand{display:flex;gap:10px;align-items:center;font-weight:850;font-size:1.1rem}.logo{display:grid;place-items:center;background:#fff;color:var(--green);border-radius:14px;width:44px;height:44px;font-size:25px}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav button{background:transparent;border:1px solid #ffffff70;color:white;padding:9px 12px;border-radius:999px;font-weight:650;cursor:pointer}nav button.active,nav button:hover{background:white;color:var(--dark)}
+main{max-width:1100px;margin:auto;padding:22px 16px 50px}.hero{background:linear-gradient(110deg,#e4f7eb,#edf6ff);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,5vw,48px);display:grid;grid-template-columns:1.4fr .8fr;gap:20px;align-items:center}.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem}h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:10px 0 14px;color:#074e3a}h2{margin:0 0 8px;color:#07513d}p{margin:8px 0}.hero p{font-size:1.08rem;color:#395d50}.hero-art{font-size:clamp(5rem,12vw,9rem);text-align:center;background:#ffffff9c;border-radius:22px;padding:15px}.btn{border:0;border-radius:12px;padding:12px 16px;background:var(--green);color:#fff;font-weight:750;cursor:pointer;font-size:.98rem}.btn:hover{background:var(--dark)}.btn.secondary{background:#e4f5eb;color:var(--dark);border:1px solid #b7dfca}.btn.gold{background:#a86a00}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 5px 18px #164d3510}.card .emoji{font-size:1.8rem}.card h3{margin:7px 0 5px}.muted{color:var(--muted);font-size:.94rem}.section{display:none;margin-top:22px}.section.show{display:block}.section-head{margin-bottom:14px}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-weight:700}.field input,.field textarea,.field select{font:inherit;padding:11px 12px;border:1px solid #bcd4c6;border-radius:10px;background:white;width:100%}.field textarea{min-height:90px;resize:vertical}.notice{background:#fff8df;border:1px solid #f2dfa1;padding:12px 14px;border-radius:12px;color:#674b0a;font-size:.92rem}.success{background:#e7f8ed;border:1px solid #b5e2c5;color:#07513d;padding:12px;border-radius:12px;margin:12px 0;display:none}.list{display:grid;gap:10px}.item{border:1px solid var(--line);padding:13px;border-radius:12px;background:#fbfefc}.points-big{font-size:2.5rem;font-weight:850;color:var(--green)}.progress{height:12px;background:#e0eee6;border-radius:99px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;background:#20a46f;width:0;transition:width .25s}.maplinks{display:grid;gap:10px}.maplink{display:block;color:#07513d;background:#edf7ff;border:1px solid #c9e1f8;border-radius:12px;padding:14px;text-decoration:none;font-weight:700}.maplink:hover{background:#dceeff}footer{text-align:center;color:var(--muted);padding:25px 15px;border-top:1px solid var(--line)}small{font-size:.85rem}.pill{display:inline-block;background:#e6f5ec;color:#08704f;border-radius:99px;padding:4px 9px;font-weight:750;font-size:.8rem}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.hero-art{font-size:5rem;padding:6px}.cards{grid-template-columns:1fr}.two{grid-template-columns:1fr}.top{align-items:flex-start}nav{width:100%}nav button{flex:1}}
+</style>
+</head>
+<body>
+<header><div class="top">
+  <div class="brand"><div class="logo">🌿</div><div>Ajudância de Fortaleza<br><small>Juntos por uma cidade mais limpa!</small></div></div>
+  <nav aria-label="Navegação principal">
+    <button class="active" data-tab="inicio">Início</button><button data-tab="denunciar">Denunciar</button><button data-tab="mapa">Mapa</button><button data-tab="pontos">Pontos</button><button data-tab="aprender">Aprender</button><button data-tab="mutiroes">Mutirões</button>
+  </nav>
+</div></header>
+<main>
+<section id="inicio" class="section show">
+ <div class="hero"><div><div class="eyebrow">Cuidar da cidade começa com a gente</div><h1>Fortaleza mais limpa começa com você.</h1><p>Registre problemas ambientais, encontre orientações para descartar resíduos, aprenda sobre reciclagem e participe de ações comunitárias.</p><button class="btn" data-go="denunciar">🌱 Quero ajudar</button></div><div class="hero-art" aria-label="Cidade verde">🌇🌴♻️</div></div>
+ <div class="cards">
+  <article class="card"><div class="emoji">🗑️</div><h3>Denunciar lixo</h3><p class="muted">Registre um ponto com lixo e descreva o problema.</p><button class="btn secondary" data-go="denunciar">Fazer registro</button></article>
+  <article class="card"><div class="emoji">📍</div><h3>Mapa de coleta</h3><p class="muted">Pesquise no mapa locais e serviços de descarte.</p><button class="btn secondary" data-go="mapa">Ver opções</button></article>
+  <article class="card"><div class="emoji">⭐</div><h3>Ganhe pontos</h3><p class="muted">Acompanhe os pontos de demonstração por suas ações.</p><button class="btn secondary" data-go="pontos">Ver meus pontos</button></article>
+  <article class="card"><div class="emoji">📚</div><h3>Aprender</h3><p class="muted">Dicas práticas para reduzir resíduos e reciclar.</p><button class="btn secondary" data-go="aprender">Aprender agora</button></article>
+  <article class="card"><div class="emoji">🤝</div><h3>Mutirões</h3><p class="muted">Organize uma ação comunitária de limpeza.</p><button class="btn secondary" data-go="mutiroes">Ver mutirões</button></article>
+  <article class="card"><div class="emoji">💚</div><h3>Pequenas atitudes</h3><p class="muted">Não jogue lixo na rua, separe resíduos e cuide dos espaços públicos.</p><span class="pill">Cada atitude conta</span></article>
+ </div>
+ <div class="notice"><strong>Importante:</strong> este é um protótipo escolar. Os registros ficam neste navegador e não são enviados à Prefeitura. Para denúncias oficiais, use os canais oficiais do município.</div>
+</section>
+<section id="denunciar" class="section">
+ <div class="section-head"><div class="eyebrow">Ajude a identificar problemas</div><h2>🗑️ Registrar um ponto com lixo</h2><p class="muted">Preencha os dados para simular uma denúncia no projeto.</p></div>
+ <div class="two"><div class="card"><form id="reportForm">
+  <div class="field"><label for="local">Local ou bairro em Fortaleza</label><input id="local" required placeholder="Ex.: Benfica, próximo à praça"></div>
+  <div class="field"><label for="tipo">Tipo de problema</label><select id="tipo"><option>Lixo acumulado</option><option>Descarte irregular de entulho</option><option>Plástico em área pública</option><option>Possível poluição da água</option><option>Outro problema ambiental</option></select></div>
+  <div class="field"><label for="descricao">Descrição (não inclua dados pessoais)</label><textarea id="descricao" placeholder="Descreva o que observou..."></textarea></div>
+  <button class="btn" type="submit">Registrar no protótipo (+10 pontos)</button><div class="success" id="reportSuccess" role="status"></div>
+ </form></div><div class="card"><h3>📷 Dica para um registro responsável</h3><p>Se for fazer um registro real, não se coloque em risco para tirar fotos e evite mostrar rostos, placas de veículos ou informações pessoais.</p><p>Para uma denúncia oficial, confirme o canal correto com a Prefeitura de Fortaleza. Este site de demonstração não encaminha denúncias.</p><div id="reports" class="list"></div></div></div>
+</section>
+<section id="mapa" class="section">
+ <div class="section-head"><div class="eyebrow">Descarte correto</div><h2>📍 Encontrar coleta e Ecopontos</h2><p>Use estas pesquisas para conferir locais, endereços e horários atualizados antes de sair.</p></div>
+ <div class="two"><div class="card"><h3>Buscar locais em Fortaleza</h3><div class="field"><label for="searchPlace">O que você procura?</label><select id="searchPlace"><option value="Ecopontos Fortaleza CE">Ecopontos</option><option value="pontos de coleta seletiva Fortaleza CE">Coleta seletiva</option><option value="coleta de pilhas e baterias Fortaleza CE">Pilhas e baterias</option><option value="pontos de coleta de óleo de cozinha Fortaleza CE">Óleo de cozinha usado</option><option value="coleta de eletrônicos Fortaleza CE">Lixo eletrônico</option></select></div><button class="btn" id="searchMap">Pesquisar no Google Maps ↗</button><p class="muted">Os resultados são externos e podem mudar. Confirme o que cada local recebe.</p></div><div class="card"><h3>♻️ Antes de descartar</h3><ul><li>Separe os resíduos conforme a orientação local.</li><li>Não misture pilhas, baterias ou eletrônicos ao lixo comum.</li><li>Não despeje óleo na pia ou no bueiro.</li><li>Confira os horários e materiais aceitos no ponto escolhido.</li></ul></div></div>
+</section>
+<section id="pontos" class="section">
+ <div class="section-head"><div class="eyebrow">Reconhecer boas atitudes</div><h2>⭐ Meu placar ecológico</h2><p class="muted">Os pontos são demonstrativos e ficam salvos apenas neste navegador.</p></div>
+ <div class="two"><div class="card"><div class="muted">Seus pontos</div><div class="points-big" id="points">0</div><div class="progress"><span id="progress"></span></div><p id="level">Nível 1 · Amigo da natureza</p><p class="muted">A cada 100 pontos, você alcança um novo nível de demonstração.</p></div><div class="card"><h3>Como ganhar pontos</h3><div class="list"><div class="item">🗑️ Registrar um ponto com lixo <strong>+10</strong></div><div class="item">📚 Ler as dicas de reciclagem <strong>+5</strong></div><div class="item">🤝 Cadastrar uma ideia de mutirão <strong>+15</strong></div></div><p class="muted">No projeto real, pontos precisariam de regras de verificação para evitar registros falsos.</p></div></div>
+</section>
+<section id="aprender" class="section">
+ <div class="section-head"><div class="eyebrow">Aprender para transformar</div><h2>📚 Reciclagem e meio ambiente</h2><p>Pequenas mudanças de hábito podem reduzir o lixo nas ruas e nos rios.</p></div>
+ <div class="cards">
+  <article class="card"><div class="emoji">🧴</div><h3>Separe os materiais</h3><p>Confira as regras da coleta local. Embalagens vazias e limpas costumam facilitar a triagem.</p></article>
+  <article class="card"><div class="emoji">🔋</div><h3>Pilhas e baterias</h3><p>Leve a pontos de recebimento apropriados. Não coloque esses materiais no lixo comum.</p></article>
+  <article class="card"><div class="emoji">🥫</div><h3>Reduza e reutilize</h3><p>Antes de descartar algo, pense se pode reutilizar, consertar, doar ou reciclar.</p></article>
+  <article class="card"><div class="emoji">🌊</div><h3>Proteja os bueiros e rios</h3><p>Lixo levado pela chuva pode chegar a canais e ao mar. Nunca jogue resíduos em bueiros.</p></article>
+  <article class="card"><div class="emoji">🛢️</div><h3>Óleo de cozinha</h3><p>Depois de frio, armazene em recipiente fechado e procure um ponto que aceite óleo usado.</p></article>
+  <article class="card"><div class="emoji">🧤</div><h3>Limpeza com segurança</h3><p>Em mutirões, use equipamentos adequados e não manuseie vidro, seringas ou resíduos perigosos.</p></article>
+ </div><button class="btn" id="readTips">Li as dicas (+5 pontos)</button><span class="muted" id="tipsMessage" aria-live="polite"></span>
+</section>
+<section id="mutiroes" class="section">
+ <div class="section-head"><div class="eyebrow">Ação comunitária</div><h2>🤝 Ideias de mutirões de limpeza</h2><p>Planeje com a escola, associação de moradores ou um adulto responsável.</p></div>
+ <div class="two"><div class="card"><h3>Cadastrar uma ideia</h3><form id="eventForm"><div class="field"><label for="eventName">Nome da ação</label><input id="eventName" required placeholder="Ex.: Praça mais limpa"></div><div class="field"><label for="eventArea">Bairro ou local aproximado</label><input id="eventArea" required placeholder="Ex.: praça do bairro"></div><div class="field"><label for="eventDate">Data planejada (opcional)</label><input id="eventDate" type="date"></div><button class="btn" type="submit">Cadastrar ideia (+15 pontos)</button><div class="success" id="eventSuccess" role="status"></div></form><p class="muted">Cadastrar aqui não reserva espaço público nem convoca participantes automaticamente.</p></div><div class="card"><h3>Próximas ideias</h3><div id="events" class="list"><p class="muted">Ainda não há ideias cadastradas neste navegador.</p></div><div class="notice">Combine autorização, supervisão de adultos, água, luvas e destino adequado para os resíduos antes de realizar uma ação.</div></div></div>
+</section>
+</main>
+<footer><strong>Ajudância de Fortaleza</strong><br>Projeto escolar de educação ambiental · Pequenas atitudes, grandes mudanças!<br><small>Protótipo demonstrativo; não é um serviço oficial da Prefeitura.</small></footer>
+<script>
+const $=s=>document.querySelector(s);
+let points=Number(localStorage.getItem('af_points')||0);
+let reports=JSON.parse(localStorage.getItem('af_reports')||'[]');
+let events=JSON.parse(localStorage.getItem('af_events')||'[]');
+let readAwarded=localStorage.getItem('af_read_awarded')==='yes';
+function renderPoints(){ $('#points').textContent=points;let level=Math.floor(points/100)+1;$('#level').textContent=`Nível ${level} · ${level===1?'Amigo da natureza':'Guardião verde'}`;$('#progress').style.width=(points%100)+'%';localStorage.setItem('af_points',points);}
+function addPoints(n){points+=n;renderPoints();}
+function showTab(id){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('show',s.id===id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));window.scrollTo({top:0,behavior:'smooth'});}
+document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.go)));
+function renderReports(){let box=$('#reports');box.innerHTML='';if(!reports.length){box.innerHTML='<p class="muted">Nenhum registro feito ainda.</p>';return;}reports.slice().reverse().forEach(r=>{let d=document.createElement('div');d.className='item';d.textContent=`📍 ${r.local} — ${r.tipo}`;let p=document.createElement('p');p.className='muted';p.textContent=r.descricao||'Sem descrição adicional.';d.appendChild(p);box.appendChild(d);});}
+function renderEvents(){let box=$('#events');box.innerHTML='';if(!events.length){box.innerHTML='<p class="muted">Ainda não há ideias cadastradas neste navegador.</p>';return;}events.slice().reverse().forEach(e=>{let d=document.createElement('div');d.className='item';let strong=document.createElement('strong');strong.textContent='🤝 '+e.name;let p=document.createElement('p');p.textContent='Local: '+e.area+(e.date?' · Data: '+e.date:'');d.append(strong,p);box.appendChild(d);});}
+$('#reportForm').addEventListener('submit',e=>{e.preventDefault();reports.push({local:$('#local').value.trim(),tipo:$('#tipo').value,descricao:$('#descricao').value.trim()});localStorage.setItem('af_reports',JSON.stringify(reports));addPoints(10);renderReports();$('#reportSuccess').style.display='block';$('#reportSuccess').textContent='Registro salvo neste navegador! Você ganhou 10 pontos de demonstração.';e.target.reset();});
+$('#searchMap').addEventListener('click',()=>window.open('https://www.google.com/maps/search/'+encodeURIComponent($('#searchPlace').value),'_blank','noopener'));
+$('#readTips').addEventListener('click',()=>{if(readAwarded){$('#tipsMessage').textContent=' Você já recebeu esses pontos neste navegador.';return;}readAwarded=true;localStorage.setItem('af_read_awarded','yes');addPoints(5);$('#tipsMessage').textContent=' Você ganhou 5 pontos!';});
+$('#eventForm').addEventListener('submit',e=>{e.preventDefault();events.push({name:$('#eventName').value.trim(),area:$('#eventArea').value.trim(),date:$('#eventDate').value});localStorage.setItem('af_events',JSON.stringify(events));addPoints(15);renderEvents();$('#eventSuccess').style.display='block';$('#eventSuccess').textContent='Ideia cadastrada neste navegador! Você ganhou 15 pontos de demonstração.';e.target.reset();});
+renderPoints();renderReports();renderEvents();
+</script>
+</body></html>
